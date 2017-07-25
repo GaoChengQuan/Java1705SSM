@@ -43,7 +43,7 @@ http://www.springframework.org/schema/util/spring-util-4.1.xsd">
 	  自动创建到spring容器中，bean的id是mapper的类名（首字母小写） -->  
 	<bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
 		<!-- 设置Mapper扫描包 -->
-		<property name="basePackage" value="com.situ.ssm.dao" />
+		<property name="basePackage" value="com.situ.ssm.mapper" />
 	</bean>
 
 

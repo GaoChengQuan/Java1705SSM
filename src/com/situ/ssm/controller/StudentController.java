@@ -8,7 +8,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-import com.situ.ssm.entity.Student;
+import com.situ.ssm.pojo.Student;
 import com.situ.ssm.service.IStudentService;
 
 
@@ -24,5 +24,11 @@ public class StudentController {
 		List<Student> list = studentService.findAll();
 		model.addAttribute("list", list);
 		return "student_list";
+	}
+	
+	@RequestMapping(value="/delete")
+	public String delete(int id) {
+		studentService.deleteById(id);
+		return "redirect:/student/list.action";
 	}
 }

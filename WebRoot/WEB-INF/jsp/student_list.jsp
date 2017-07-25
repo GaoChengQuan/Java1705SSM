@@ -10,6 +10,16 @@
     charset="utf-8"></script>
 <script src="${pageContext.request.contextPath}/lib/bootstrap/js/bootstrap.js" type="text/javascript"
     charset="utf-8"></script>
+    <script type="text/javascript">
+	function delStudent(id) {
+		var isDel = confirm("您确认要删除吗？");
+		if (isDel) {
+			//要删除
+			location.href = "${pageContext.request.contextPath}/student/delete.action?id="
+					+ id;
+		}
+	}
+</script>
 </head>
 <body>
     <div class="container" style="width:70%">

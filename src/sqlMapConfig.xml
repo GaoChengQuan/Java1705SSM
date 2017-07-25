@@ -4,6 +4,6 @@
 <configuration>
     <!-- 别名 -->
     <typeAliases>
-       <package name="com.situ.ssm.entity"/>
+       <package name="com.situ.ssm.pojo"/>
     </typeAliases>
 </configuration>
